@@ -8,7 +8,7 @@ class Post
   end
 
   def author_name
-    if @author.respond_to?(name)
+    if @author.include?(name)
       @author.name
     else
       return nil

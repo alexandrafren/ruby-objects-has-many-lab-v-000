@@ -8,11 +8,8 @@ class Post
   end
 
   def author_name
-    if @author.name == name
-      return @author.name
-    else
-      return nil
-    end
+    @author.name
+    
   end
 
 end

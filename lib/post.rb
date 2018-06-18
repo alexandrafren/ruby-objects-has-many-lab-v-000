@@ -8,7 +8,7 @@ class Post
   end
 
   def author_name
-    if @author.include?(name)
+    if !@author.name == null
       @author.name
     else
       return nil

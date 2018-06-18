@@ -8,7 +8,10 @@ class Post
   end
 
   def author_name
-    @author.name
+    if @author.include?(name)
+      return @author.name
+    else
+      return nil
   end
 
 end
